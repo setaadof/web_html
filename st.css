@@ -37,10 +37,9 @@ header{
   background:#107bee;
   width: 96%;
   margin: auto;
-  border-radius:5px;
   box-shadow:0px 4px 4px #1c1a19; 
   color: whitesmoke;
-  z-index: 1;
+  z-index:1;
 }
 
 #titre_principale{
@@ -88,114 +87,126 @@ nav a:hover{
   border-bottom : 3px solid #760001;
 }
 
+/*banniere*/
+#banniere_image{
+     margin-top:90px;
+     height:100px;
+     border-radius:5px;
+     background:url('images/rova.png') no-repeat, url('images/tsimbazaza.png') no-repeat 125px 0px,url('images/soarano.png') no-repeat 155px 0px,url('images/anosy.png') no-repeat 450px 0px,url('images/ambohimanga.png') no-repeat right,url('images/lapanytanana.png') no-repeat 700px 0px; 
+     position:relative;
+     box-shadow:0px 4px 4px #1c1a19; 
+     margin-bottom:14px;
+}
+
+#banniere_description{
+	position:absolute;
+	bottom:0;
+	border-radius:0px 0px 5px 5px;
+	width:99.8%;
+	height:17px;
+	padding-top:15px;
+	padding-left:4px;
+	background-color:rgb(24,24,24);/* Pour les anciens navigateurs*/
+	background-color:rgba(24,24,24,0.6);
+	color:white;
+	font-size:0.8em;
+}
+.bouton_rouge{
+	display:inline-block;
+	height:25px;
+	position:absolute;
+	right:5px;
+	bottom:2px;
+	background-color:red;
+	border:1px solid #760001;
+	border-radius:5px;
+	font-size:1.2em;
+	text-align:center;
+	padding:0px 8px 0px 8px;
+	color:white;
+	text-decoration:none;
+}
+
+.bouton_rouge img{
+	border:0;
+}
+
 /*les corps du textµ*/
 section{
   margin-top: 100px;
   width: 100%;
-  text-align: center;
   z-index:2;
 }
 
-article, #photo{
+article, aside{
   display: inline-block;
   vertical-align: top;
   text-align: justify;
 }
-section h1{
-    position: relative;
-    left: 151px;
-    font-size: 1.9em;
-}
-section p{
-  text-align:center;
-  font-style: italic;
-  font-family: 'BallparkWeiner','Arial black', serif;
-}
 
 article{
-  width:50%;
+  width: 63%;
   height: auto;
-  margin-right: 0px;
+  margin-right: 12px;
   padding: 20px;
 }
-td a{
+article p{
+   font-size: 1.1em;
+}
+#photo_tana img{
+  border-radius:15px;
+}
+
+aside{
+  position:relative;
+  width:30%;
+  height: auto;
+  margin-left: 12px;
+  background-color:#706b64;
+  box-shadow:0px 2px 5px #1c1a19;
+  border-radius:5px;
+  padding:10px;
+  color:white;
+  font-size:0.9em;
+}
+
+#photo_feno{
+  text-align:center;
+}
+ 
+#photo_feno img{
+  border-radius:15px;
+  border:1px solid #181818;
+}
+#resseaux{
+    margin-left: 21%;
+}
+#facebook, #twitter, #instagram,#youtube{
+ display: inline-block;
+ vertical-align: top;
+}
+
+#facebook h5, #twitter h5, #instagram h5,#youtube h5{
+  margin:0px;
+}
+#twitter img,#youtube img{
+    height: 55px;
+}
+
+
+aside img{
+  text-align:center;
+  border-radius:15px;
+  margin-right:25px;
+}
+aside a{
   font-size:1em;
-  color:#19191a;
-  padding-bottom:1px;
+  color:whitesmoke;
   text-decoration:none;
 }
 
-td a:hover{
+aside a:hover{
   color:#760001;
-  border-bottom : 1px solid #760001;
-}
-#photo{
-  margin-top: 16px;
-}
-#photo img{
-     border-radius: 14px;
-     height: 121px;
 }
 
-/*footer this page */
 
-footer{
-  width: 100%;
-  height: auto;
-}
-#nom, #recherche{
-  display: inline-block;
-  vertical-align: top;
-}
-#nom img, #nom p{
-  display: inline-block;
-  vertical-align: top;
-}
-#nom img{
-  height: 50px;
-}
-#recherche {
-  position: absolute;
-  right: 50px;
-  margin: 15px;
-}
-
-footer ul{
-  font-size: 0.8em;
-}
-footer h2{
-  font-size:1.2em;
-  text-transform: uppercase;
-}
-
-#mon_tweet, #mes_photos,#mes_amis{
-  display: inline-block;
-  vertical-align: top;
-}
-
-#tweet{
-  width: 28%;
-}
-#mes_photos{
-  width:35%;
-}
-#mes_amis{
-  width:31%;
-}
-
-#mes_photos img{
-  border:1px solid #181818;
-  margin-right:2px;
-}
-
-#mes_amis ul{
-  display:inline-block;
-  vertical-align:top;
-  margin-top:0;
-  width:48%;
-  list-style-image:url('images/icone_lien.png');padding-left:2px;
-}
-
-#mes_amis a{text-decoration:none;
-color:#760001;
-}
