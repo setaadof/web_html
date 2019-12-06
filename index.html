@@ -8,8 +8,8 @@
     <title>koto-pageweb</title>
   </head>
   <body>
-   <div id="bloc_page">
       <header>
+      <div id="header_section">
         <div id="titre_principale">
           <h1>kotokely</h1>
           <h2>carnet de voyage</h2>
@@ -23,10 +23,12 @@
             <li><a href="blog.html">Contact</a></li>
           </ul>
         </nav>
+      </div>
+        
       </header>
-
+   <div id="bloc_pageSection">
       <div id="banniere_image">
-	      <div id="banniere_description">                   Retour sur mes vacances à Antananarivo...<a href="#" class="bouton_rouge">Voir l'article
+	      <div id="banniere_description">Retour sur mes vacances à Antananarivo...<a href="#" class="bouton_rouge">Voir l'article
 	      <img src="images/fleche_icone.png" alt=""/></a>
         </div>
       </div>
@@ -37,7 +39,7 @@
           <p>Antananarivo ou Tananarive1 (en malgache : le « village des milles », à l'origine du royaume Merina, il était surtout question de village et non pas de ville, "Tananarive" étant le nom francisé pendant la période coloniale) est la capitale économique et politique de Madagascar, de la province d'Antananarivo et de la région Analamanga située dans la partie centrale de l'île. Ses habitants s'appellent les Antananariviens. Sa population dépasse 1 600 000 habitants, son aire urbaine approche les 2,2 millions d'habitants. La ville est divisée en six arrondissements et 192 fokontany.
           </p>
           <p id="photo_tana">
-             <img src="images/capitale.png" alt="capitale d'Antananarivo"/>
+             <img src="images/.png" alt="capitale d'Antananarivo"/>
           </p>
 
           <p> le 6 octobre 2015, le maire de la ville est Lalao Ravalomanana, épouse de l'ancien président malgache Marc Ravalomanana. Elle est la première femme élue maire de la capitale au suffrage universel le 31 juillet 2015.
@@ -58,21 +60,16 @@
           <p> Madagascar est une île immense et un pays situé au large de la côte sud-est de l'Afrique. Il abrite des milliers d'espèces animales endémiques comme les lémuriens, ainsi que des forêts tropicales, des plages et des récifs. À proximité de l'effervescente capitale, Antananarivo, se trouve la colline d'Ambohimanga, un ensemble de palais royaux et de cimetières, ainsi que l'Avenue des Baobabs, une route de terre bordée d'arbres géants vieux de plusieurs siècles.</p>
           <p id="resseaux"> 
             <div id="facebook">
-              <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook" /><br/>
-              <h5>Facebook</h5></a>
+              <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook" title="Facebook"/></a>
             </div>
             <div id="twitter">
-              <a href="https://twitter.com/search?q=@ratsiandraofana&src=typed_query"><img src="images/twitter.png" alt="twitter" /><br/>
-              <h5>Twitter</h5></a>
+              <a href="https://twitter.com/search?q=@ratsiandraofana&src=typed_query"><img src="images/twitter.png" alt="twitter" title="Twitter" /></a>
             </div>
             <div id="instagram">
-              <a href="http://www.instagram.com"><img src="images/instagram.png" alt="instagram" /><br/>
-              <h5>Instagram</h5></a>
+              <a href="http://www.instagram.com"><img src="images/instagram.png" alt="instagram" title="instagram" /></a>
             </div>
             <div id="youtube">
-              <a href="http://www.youtube.com"><img src="images/youtube.png" alt="youtube"
-              /><br/>
-              <h5>Youtube</h5></a>
+              <a href="http://www.youtube.com"><img src="images/youtube.png" alt="youtube" title="you tube" /></a>
             </div>
           </p>
       </aside>
@@ -89,19 +86,23 @@
           </div>
           <div id="recherche">
             <h3>Continuer vos rechercher....</h3>
-            <form method="post"
-            <input type="search" placeholder="Vous recherchez autres choses?" id="search"/>
-          </form></div>
+            <form method="post" action="traitement.php">
+              <input type="search" placeholder="Vous recherchez autres choses?" id="search"/>
+            </form>
+         </div>
         </div>
-        <div id="mon_twitter">
+        <div id="footer_contact">
+          <div id="mon_twitter">
           <h2>Mon dernier tweet</h2>
           <p>hi ha hooho fhoishqsqfsdfhqlsfsdq</p>
         </div>
         <div id="mes_photos">
-         <p><img src="images/photos1.png" alt="Baobabs"/><img src="images/photos2.png" alt="roches"/><img src="images/photos3.png" alt="tendrombohitra"/><img src="images/photos4.png" alt="andraikiba"/>
+         <h2>Mon dernier tweet</h2>
+         <p><img src="images/photos1.png" alt="Baobabs"/><img src="images/photos2.png" alt="roches"/><img src="images/photos3.png" alt="tendrombohitra"/><img src="images/photos4.png" alt="andraikiba"/><img src="images/fenosoa.jpg" alt="photos de profil"/>
          </p>
         </div>
         <div id="mes_amis">
+          <h2>Mes amis</h2>
           <ul>
             <li><a href="#">Bila</a></li>
             <li><a href="#">Riri</a></li>
@@ -115,13 +116,17 @@
             <li><a href="#">Dossand</a></li>
           </ul>
         </div>
-        <div id="mes-contact">
-          <h4>Contactez-moi!</h4>
+        <div id="mes_contact">
+          <h4>Contactez-moi! au cas où vous avez besoins d'aide?</h4>
           <p>
-            <a href="contact.html" title="mon contact">mes conctat</a>
+            <a href="contact.html" title="mes contact">mes conctat</a>
           </p>
         </div>
+        </div>
+        
+        <p id="copy">&copy; 2019  Copyrigth Koto-pageweb.com - Tous droit réservés<p>
       </footer>
+      
    </div>
   </body>
 </html>

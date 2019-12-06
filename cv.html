@@ -2,14 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="st.css" />
     <!--[if lte IE 7]><link rel="stylesheet" href="style_ie.css" /><![endif]-->
-
+    <!--[if lt IE 9]><scriptsrc="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <title>koto-pageweb</title>
   </head>
   <body>
-   <div id="bloc_page">
-      <header>
+   <header>
+      <div id="header_section">
         <div id="titre_principale">
           <h1>kotokely</h1>
           <h2>carnet de voyage</h2>
@@ -23,10 +23,13 @@
             <li><a href="blog.html">Contact</a></li>
           </ul>
         </nav>
-      </header>
+      </div>
+   </header>
+
+   <div id="bloc_pageSection">
       <section>
         <article>
-          <h1>Curriculum vitae</h1>
+          <h1 class="cv_h1">Curriculum vitae</h1>
           <h2>Etat civil</h2>
           <table>
             <tr>
@@ -123,29 +126,64 @@
             <li>Foot-ball</li>
             <li>Danse</li>
           </ul>
-	        <p>Je déclare sur l'honneur l'exatutide des renseignements fournis ci-dessus</p>
+	<p>Je déclare sur l'honneur l'exatutide des renseignements fournis ci-dessus</p>
         </article>
         <div id="photo">
-	        <img src="images/fenosoa.jpg" alt="photos de profil"/>
+	  <img src="images/fenosoa.jpg" alt="photos de profil"/>
         </div>
       </section>
+
+
       <footer>
         <div id="a_propos">
-          <div class="nom">
-             <h3>L'Auteurs</h3>
-             <img src="images/fenosoa.jpg" alt="photos de profil"/>
-             <p><a href="htpp://www.koto-pageweb.com" alt="Fenosoa">RAtsiandraofana Fenosoa Jean Luc Odon</a><br/>
-             Etudiant a l'universite à Antananarivo
-             </p>
+          <div id="nom">
+            <h3>L'Auteur</h3>
+            <img src="images/fenosoa.jpg" alt="photos de profil"/>
+            <p><a href="htpp://www.koto-pageweb.com" alt="Fenosoa">Ratsiandraofana Fenosoa Jean Luc Odon</a><br/>
+             Etudiant a l'universite à Antananarivo</p>
           </div>
-          <div class="recherche">
+          <div id="recherche">
+            <h3>Continuer vos rechercher....</h3>
             <form method="post" action="traitement.php">
-             <label for="search">Vous echerchez autres choses?</label> 
-             <input type="search" placeholder="Recherher sur google" id="search"/>
-           </form>
-           </div>
+              <input type="search" placeholder="Vous recherchez autres choses?" id="search"/>
+            </form>
+         </div>
         </div>
+        <div id="footer_contact">
+          <div id="mon_twitter">
+          <h2>Mon dernier tweet</h2>
+          <p>hi ha hooho fhoishqsqfsdfhqlsfsdq</p>
+        </div>
+        <div id="mes_photos">
+         <h2>Mon dernier tweet</h2>
+         <p><img src="images/photos1.png" alt="Baobabs"/><img src="images/photos2.png" alt="roches"/><img src="images/photos3.png" alt="tendrombohitra"/><img src="images/photos4.png" alt="andraikiba"/><img src="images/fenosoa.jpg" alt="photos de profil"/>
+         </p>
+        </div>
+        <div id="mes_amis">
+          <h2>Mes amis</h2>
+          <ul>
+            <li><a href="#">Bila</a></li>
+            <li><a href="#">Riri</a></li>
+            <li><a href="#">Bozy</a></li>
+            <li><a href="#">Michel</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Innocente</a></li>
+            <li><a href="#">Faly</a></li>
+            <li><a href="#">Rado</a></li>
+            <li><a href="#">Dossand</a></li>
+          </ul>
+        </div>
+        <div id="mes_contact">
+          <h4>Contactez-moi! au cas où vous avez besoins d'aide?</h4>
+          <p>
+            <a href="contact.html" title="mes contact">mes conctat</a>
+          </p>
+        </div>
+        </div>
+        
+        <p id="copy">&copy; 2019  Copyrigth Koto-pageweb.com - Tous droit réservés<p>
       </footer>
+
    </div>
   </body>
-</html>
