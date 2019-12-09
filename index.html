@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="st.css" />
+    <link rel="stylesheet" href="style.css" />
     <!--[if lte IE 7]><link rel="stylesheet" href="style_ie.css" /><![endif]-->
     <!--[if lt IE 9]><scriptsrc="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <title>koto-pageweb</title>
@@ -13,25 +13,25 @@
         <div id="titre_principale">
           <h1>kotokely</h1>
           <h2>carnet de voyage</h2>
-        </div>
+        </div><!--close titre_principale-->
         
         <nav>
           <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="cv.html">CV</a></li>
             <li><a href="blog.html">Blog</a></li>
-            <li><a href="blog.html">Contact</a></li>
+            <li><a href="contact.html">Contactez moi</a></li>
           </ul>
-        </nav>
-      </div>
+        </nav><!--close nav-->
+      </div><!--close header_section-->
         
-      </header>
+      </header><!--close header-->
    <div id="bloc_pageSection">
       <div id="banniere_image">
 	      <div id="banniere_description">Retour sur mes vacances à Antananarivo...<a href="#" class="bouton_rouge">Voir l'article
 	      <img src="images/fleche_icone.png" alt=""/></a>
-        </div>
-      </div>
+        </div><!--close banniere_description-->
+      </div><!--close banniere_image--> 
 
       <section>
         <article>
@@ -39,7 +39,7 @@
           <p>Antananarivo ou Tananarive1 (en malgache : le « village des milles », à l'origine du royaume Merina, il était surtout question de village et non pas de ville, "Tananarive" étant le nom francisé pendant la période coloniale) est la capitale économique et politique de Madagascar, de la province d'Antananarivo et de la région Analamanga située dans la partie centrale de l'île. Ses habitants s'appellent les Antananariviens. Sa population dépasse 1 600 000 habitants, son aire urbaine approche les 2,2 millions d'habitants. La ville est divisée en six arrondissements et 192 fokontany.
           </p>
           <p id="photo_tana">
-             <img src="images/.png" alt="capitale d'Antananarivo"/>
+             <img src="images/capitale.png" alt="capitale d'Antananarivo"/>
           </p>
 
           <p> le 6 octobre 2015, le maire de la ville est Lalao Ravalomanana, épouse de l'ancien président malgache Marc Ravalomanana. Elle est la première femme élue maire de la capitale au suffrage universel le 31 juillet 2015.
@@ -49,16 +49,44 @@
           </p>
 
           <p> La pollution de l'air à Antananarivo est l'une des plus élevées au monde2,3. </p>
-        </article>
+        </article><!--close article-->
+ 
         <aside>
-          <h1>A propos de l'auteur</h1>
-          <p>je m'appelle fenosoa! ne le 03 decembre 1998. je suis a Madagascar.
-          </p>
-          <p id="photo_feno">
-           <img src="images/fenosoa.jpg" alt="Photo de koto"/>
-          </p>
-          <p> Madagascar est une île immense et un pays situé au large de la côte sud-est de l'Afrique. Il abrite des milliers d'espèces animales endémiques comme les lémuriens, ainsi que des forêts tropicales, des plages et des récifs. À proximité de l'effervescente capitale, Antananarivo, se trouve la colline d'Ambohimanga, un ensemble de palais royaux et de cimetières, ainsi que l'Avenue des Baobabs, une route de terre bordée d'arbres géants vieux de plusieurs siècles.</p>
-          <p id="resseaux"> 
+          <div class="sidebar">
+              <div class="sidebar_item">
+		  <h1>New Website</h1>
+		  <p>Je m'appelle Fenosoa!<br/>
+		     <p id="photo_feno">
+		      <img src="images/fenosoa.jpg" alt="Photo de koto"/>
+		     </p>
+		     Bienvenue sur mon nouveau site internet. S'il vous plaît jetez un œil, tout commentaire est très apprécié.
+		  </p>
+              </div><!--close sidebar_item--> 
+           </div><!--close sidebar-->	
+          
+          <div class="sidebar_item">
+            <div class="sidebar_item">
+             <h1>Derniers Mis à Jour</h1>
+                <h2>Décembre 2019</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tempor enim.</p> 
+            </div><!--close sidebar_item--> 
+           </div><!--close sidebar-->	
+            	
+	    <div class="sidebar">
+              <div class="sidebar_item">
+                <h2>Fevrier20200</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tempor enim.</p>         
+	      </div><!--close sidebar_item--> 
+             </div><!--close sidebar-->		  
+             <div class="sidebar">
+              <div class="sidebar_item">
+                <h1>Contact</h1>
+                <p>Phone: +296 (0) 33 83 085 49</p>
+                <p>Email: <a href="mailto:ratsiandraofanaf@gmail.com">ratsiandraofanaf@gmail.com</a></p>
+              </div><!--close sidebar_item--> 
+            </div><!--close sidebar-->
+
+          <div id="reseaux"> 
             <div id="facebook">
               <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook" title="Facebook"/></a>
             </div>
@@ -71,9 +99,9 @@
             <div id="youtube">
               <a href="http://www.youtube.com"><img src="images/youtube.png" alt="youtube" title="you tube" /></a>
             </div>
-          </p>
-      </aside>
-    </section>
+          </div><!--close reseaux--> 
+      </aside><!--close aside--> 
+    </section><!--close section--> 
 
  
     <footer>
@@ -83,50 +111,66 @@
             <img src="images/fenosoa.jpg" alt="photos de profil"/>
             <p><a href="htpp://www.koto-pageweb.com" alt="Fenosoa">Ratsiandraofana Fenosoa Jean Luc Odon</a><br/>
              Etudiant a l'universite à Antananarivo</p>
-          </div>
+          </div><!--close nom--> 
           <div id="recherche">
             <h3>Continuer vos rechercher....</h3>
             <form method="post" action="traitement.php">
               <input type="search" placeholder="Vous recherchez autres choses?" id="search"/>
             </form>
-         </div>
-        </div>
+         </div><!--close recherche--> 
+        </div><!--close a_propos--> 
         <div id="footer_contact">
           <div id="mon_twitter">
-          <h2>Mon dernier tweet</h2>
-          <p>hi ha hooho fhoishqsqfsdfhqlsfsdq</p>
-        </div>
-        <div id="mes_photos">
-         <h2>Mon dernier tweet</h2>
-         <p><img src="images/photos1.png" alt="Baobabs"/><img src="images/photos2.png" alt="roches"/><img src="images/photos3.png" alt="tendrombohitra"/><img src="images/photos4.png" alt="andraikiba"/><img src="images/fenosoa.jpg" alt="photos de profil"/>
-         </p>
-        </div>
-        <div id="mes_amis">
-          <h2>Mes amis</h2>
-          <ul>
-            <li><a href="#">Bila</a></li>
-            <li><a href="#">Riri</a></li>
-            <li><a href="#">Bozy</a></li>
-            <li><a href="#">Michel</a></li>
-          </ul>
-          <ul>
-            <li><a href="#">Innocente</a></li>
-            <li><a href="#">Faly</a></li>
-            <li><a href="#">Rado</a></li>
-            <li><a href="#">Dossand</a></li>
-          </ul>
-        </div>
-        <div id="mes_contact">
-          <h4>Contactez-moi! au cas où vous avez besoins d'aide?</h4>
-          <p>
-            <a href="contact.html" title="mes contact">mes conctat</a>
-          </p>
-        </div>
-        </div>
+		  <h2>Mon dernier tweet</h2>
+		  <p>hi ha hooho fhoishqsqfsdfhqlsfsdq</p>
+          </div><!--close mon_twitter--> 
+
+          <div id="mes_photos">
+            <h2>Mes photos</h2>
+	    <p><img src="images/photos1.png" alt="Baobabs"/><img src="images/photos2.png" alt="roches"/><img src="images/photos3.png" alt="tendrombohitra"/><img src="images/photos4.png" alt="andraikiba"/><img src="images/fenosoa.jpg" alt="photos de profil"/>
+	    </p>
+          </div><!--close mes_photos--> 
+
+          <div id="mes_amis">
+		  <h2>Mes amis</h2>
+		  <ul>
+		    <li><a href="#">Bila</a></li>
+		    <li><a href="#">Riri</a></li>
+		    <li><a href="#">Bozy</a></li>
+		    <li><a href="#">Michel</a></li>
+		  </ul>
+		  <ul>
+		    <li><a href="#">Innocente</a></li>
+		    <li><a href="#">Faly</a></li>
+		    <li><a href="#">Rado</a></li>
+		    <li><a href="#">Dossand</a></li>
+		  </ul>
+            </div><!--close sidebar_item--> 
+
+            <div id="suite_page">
+              <div id="mes_suitepage">
+               <p> <a href="index.html" title="accuiel">accuiel</a></p>
+            </div><!--close mes_suitepage--> 
+            
+            <div id="mes_suitepage">
+               <p> <a href="cv.html" title="mon cv">cv</a></p>
+            </div><!--close mes_suitepage--> 
+ 
+            <div id="mes_suitepage">
+               <p> <a href="blog.html" title="mes blog">blog</a></p>
+            </div><!--close mes_suitepage--> 
+
+             <div id="mes_suitepage">
+               <p> <a href="contact.html" title="mes contact">conctatez Moi</a></p>
+            </div><!--close mes_suitepage--> 
+            </div><!--close suite_page--> 
+        </div><!--close footer_contact--> 
         
-        <p id="copy">&copy; 2019  Copyrigth Koto-pageweb.com - Tous droit réservés<p>
-      </footer>
+        <p id="copy"> &copy; 2019  Copyrigth Koto-pageweb.com - Tous droit réservés<p>
+
+      </footer><!--close footer--> 
+       
       
-   </div>
+   </div><!--close bloc_pageSection--> 
   </body>
 </html>
